@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactBookApi", "ContactBookApi\ContactBookApi.csproj", "{66E50AD9-E134-4147-A6F3-A0CD89F995AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66E50AD9-E134-4147-A6F3-A0CD89F995AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E50AD9-E134-4147-A6F3-A0CD89F995AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E50AD9-E134-4147-A6F3-A0CD89F995AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E50AD9-E134-4147-A6F3-A0CD89F995AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
