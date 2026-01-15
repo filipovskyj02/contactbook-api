@@ -18,6 +18,7 @@ public class ContactsService : IContactsService
         _dbContext = dbContext;
         _mapper = mapper;
     }
+    
     public async Task<PagedResult<GetContactDto>> ListAsync(PaginationParams pageParams, CancellationToken ct)
     {
         var entityQuery = _dbContext.Contacts
