@@ -43,31 +43,16 @@ Base path:
 
 ---
 
-## Pagination
+![alt text](swagger-screenshot-pagination.png)
 
-Query parameters:
-
-```?page=1&pageSize=20```
-
-
-Response:
-```json
-{
-  "items": [],
-  "total": 0,
-  "page": 1,
-  "pageSize": 20
-}
-```
 # Running
 ## To run the API 
 ```
 dotnet run --project ContactBookApi
 ```
 ## Swagger
-```
 http://localhost:5130/swagger/index.html
-```
+
 
 ## Running tests
 ```
