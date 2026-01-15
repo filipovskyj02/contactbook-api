@@ -15,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 builder.Services.AddScoped<IContactsService, ContactsService>();
 
 builder.Services.AddAutoMapper(typeof(ContactBookApi.Mapping.MappingProfile).Assembly);
+var isTesting = builder.Environment.EnvironmentName == "Testing";
 
 var app = builder.Build();
 
@@ -24,8 +25,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(); 
 }
 
-using (var scope = app.Services.CreateScope())
+if (!isTesting)
 {
+    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     db.Database.Migrate();
 }
